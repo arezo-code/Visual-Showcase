@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Image Gallery</title>
+  <link rel="stylesheet" href="Untitled-1.css">
+</head>
+<body>
+
+  <div class="gallery-container">
+    <header class="gallery-header">
+      <h1>Visual Showcase</h1>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="architecture">Architecture</button>
+        <button class="filter-btn" data-filter="tech">Technology</button>
+      </div>
+    </header>
+
+    <main class="image-grid">
+      <div class="grid-item" data-category="nature">
+        <img src="4216ccf53e2bb83c8dd18da5a5d97307.jpg" alt="Mountain Landscape">
+        <div class="overlay"><span>Nature View</span></div>
+      </div>
+      <div class="grid-item" data-category="architecture">
+        <img src="2e1a93a0250c4a768b82e708b53e7364.jpg" alt="Skyscraper Reflection">
+        <div class="overlay"><span>Modern Tower</span></div>
+      </div>
+      <div class="grid-item" data-category="tech">
+        <img src="0ed64aaa30846885a780231537230434.jpg" alt="Circuit Board">
+        <div class="overlay"><span>Microchip Grid</span></div>
+      </div>
+      <div class="grid-item" data-category="nature">
+        <img src="fbe86f27f25aea8e477c8011ca70c04e.jpg" alt="Forest Path">
+        <div class="overlay"><span>Deep Woods</span></div>
+      </div>
+      <div class="grid-item" data-category="architecture">
+        <img src="74d6c50ec8e6cecec680dfb271147a99.jpg" alt="Golden Gate Bridge">
+        <div class="overlay"><span>Suspension Bridge</span></div>
+      </div>
+      <div class="grid-item" data-category="tech">
+        <img src="0541477f381288c412df3405a6d9c136.jpg" alt="Cyber Security Matrix">
+        <div class="overlay"><span>Data Flow</span></div>
+      </div>
+    </main>
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <span class="close-btn">&times;</span>
+    <button class="nav-btn prev-btn" aria-label="Previous image">&#10094;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Enlarged view">
+      <p id="lightbox-caption"></p>
+    </div>
+    <button class="nav-btn next-btn" aria-label="Next image">&#10095;</button>
+  </div>
+
+  <script src="document.js"></script>
+</body>
+</html>
